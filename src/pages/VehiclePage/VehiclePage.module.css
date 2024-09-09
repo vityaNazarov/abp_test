@@ -1,0 +1,43 @@
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+.title {
+  color: rgba(0, 217, 255, 0.41);
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comment {
+  color: rgba(0, 217, 255, 0.41);
+}
+
+.textarea {
+  margin-bottom: 15px;
+  resize: none;
+  width: 320px;
+  height: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 15px;
+}
+
+.item {
+  color: bisque;
+}
+
+.description {
+  color: bisque;
+}
+
+.btnAdd {
+  color: bisque;
+}

@@ -1,0 +1,40 @@
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+.title {
+  color: rgba(0, 217, 255, 0.41);
+}
+
+.searchInput {
+  width: 230px;
+  height: 33px;
+  border-radius: 15px;
+  color: aliceblue;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.vehicleList {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.vehicleItem {
+}
+
+.vehicleLink {
+  color: aqua;
+}
+.vehicleLink:hover {
+  color: bisque;
+}

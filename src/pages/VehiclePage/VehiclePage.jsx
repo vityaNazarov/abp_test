@@ -1,6 +1,7 @@
+import css from "./VehiclePage.module.css";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getVehicleById } from "../api/dummyAPI";
+import { getVehicleById } from "../../api/dummyAPI";
 
 const VehiclePage = () => {
   const { vehicleId } = useParams();
@@ -35,23 +36,29 @@ const VehiclePage = () => {
   };
 
   return (
-    <div>
+    <div className={css.container}>
       {vehicle ? (
         <>
-          <h1>{vehicle.title}</h1>
-          <p>{vehicle.description}</p>
-          <h3>Комментарии</h3>
-          <ul>
+          <h1 className={css.title}>{vehicle.title}</h1>
+          <p className={css.description}>{vehicle.description}</p>
+          <h3 className={css.comment}>Комментарии</h3>
+          <ul className={css.list}>
             {comments.map((c, index) => (
-              <li key={index}>{c}</li>
+              <li className={css.item} key={index}>
+                {c}
+              </li>
             ))}
           </ul>
           <textarea
+            className={css.textarea}
             value={comment}
             onChange={handleCommentChange}
             placeholder="Добавить комментарий"
           />
-          <button onClick={handleAddComment}>Добавить</button>
+          <br />
+          <button className={css.btnAdd} onClick={handleAddComment}>
+            Добавить
+          </button>
         </>
       ) : (
         <p>Загрузка...</p>
